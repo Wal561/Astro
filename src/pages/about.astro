@@ -16,11 +16,11 @@ const skills = [
   "Astro",
   "Python",
   "Django",
-  "Redacción de documentos",
+  "SQL",
 ];
 
 const happy = false;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = "navy";
@@ -44,12 +44,12 @@ const pageTitle = "Sobre mí";
   <p>He aquí algunos datos sobre mí:</p>
   <ul>
     <li>Me llamo {identity.firstName}.</li>
-    <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
+    <li>Vivo en {identity.country} - Argentina y trabajo como {identity.occupation}.</li>
     {
       identity.hobbies.length >= 2 && (
         <li>
           Dos de mis aficiones son: {identity.hobbies[0]} y{" "}
-          {identity.hobbies[1]}
+          {identity.hobbies[1]}.
         </li>
       )
     }
