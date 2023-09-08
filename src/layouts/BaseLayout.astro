@@ -12,8 +12,8 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <ViewTransitions />
     <title>{pageTitle}</title>
+    <ViewTransitions />
   </head>
   <body transition:animate={fade({ duration: '0.8s' })}>
     <Header />
@@ -25,4 +25,5 @@ const { pageTitle } = Astro.props;
       import "../scripts/menu.js";
     </script>
   </body>
+  
 </html>
